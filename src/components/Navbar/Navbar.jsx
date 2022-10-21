@@ -1,10 +1,16 @@
 import './Navbar.css'
 import { useState } from "react"
-import {FaUserAlt} from "react-icons/Fa"
+import Dropdownmenu from './Dropdownmenu'
+
 
 export default function Navbar() {
 
     const [isNavExpanded, setIsNavExpanded] = useState(false)
+    const [isSubMenu, setIsSubMenu] = useState(false)
+
+    const toggleSubmenu = ()=>{
+        setIsSubMenu(!isSubMenu);
+    }
 
     return (
       <nav className="navigation">
@@ -47,7 +53,7 @@ export default function Navbar() {
               <a href="/contact">Contact</a>
             </li>
             <li>
-              <a href="/contact"><FaUserAlt/></a>
+             <Dropdownmenu />
             </li>
           </ul>
         </div>
