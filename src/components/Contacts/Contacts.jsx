@@ -15,6 +15,7 @@ const Contacts = () => {
       }, (error) => {
           console.log(error.text);
       });
+    
   };
 
   return (

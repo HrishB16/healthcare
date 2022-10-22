@@ -1,6 +1,8 @@
 import './Navbar.css'
 import { useState } from "react"
 import Dropdownmenu from './Dropdownmenu'
+import { Link } from "react-router-dom"
+import Contact from '../Contacts/Contacts'
 
 
 export default function Navbar() {
@@ -14,9 +16,9 @@ export default function Navbar() {
 
     return (
       <nav className="navigation">
-        <a href="/" className="brand-name">
+        <Link to="/" className="brand-name">
           FreshCare
-        </a>
+        </Link>
         <button
          onClick={() => {
             setIsNavExpanded(!isNavExpanded);
@@ -41,16 +43,10 @@ export default function Navbar() {
           className={isNavExpanded ? "navigation-menu expanded" : "navigation-menu"}>
           <ul>
             <li>
-              <a href="/home">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="/hospitals">Hospitals</a>
-            </li>
-            <li>
-              <a href="/about">About</a>
-            </li>
-            <li>
-              <a href="/contact">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
             <li>
              <Dropdownmenu />

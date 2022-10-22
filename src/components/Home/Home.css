@@ -16,3 +16,11 @@
     left: calc(50% - 125px);
     top: calc(50% - 125px);
 }
+
+  /* Media queries go here  */
+
+  @media screen and (max-width: 768px) {
+    .hero-banner {
+      display: none;
+    }
+  }
