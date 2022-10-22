@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import About from "./components/About/About";
 // import Footer from './components/Footer/Footer';
 import { BrowserRouter,Routes,Route } from "react-router-dom";
+import User from "./components/User/User";
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
     <Navbar />
       <Routes>         
           <Route path="/" element={<Home/>}/>
-          <Route path="about" element={<About />}/>
+          {/* <Route path="about" element={<About />}/> */}
           <Route path="contact" element={<Contacts/>}/>
+          <Route path="user" element={<User/>}/>
         {/* <Footer/> */}
       </Routes>
     </BrowserRouter>

@@ -11,7 +11,7 @@ const Dropdownmenu = () => {
     </Dropdown.Toggle>
 
     <Dropdown.Menu>
-      <Dropdown.Item href="#/action-1">Your Profile</Dropdown.Item>
+      <Dropdown.Item href="/user">Your Profile</Dropdown.Item>
       <Dropdown.Item href="#/action-2">Check medicines</Dropdown.Item>
     </Dropdown.Menu>
   </Dropdown>
